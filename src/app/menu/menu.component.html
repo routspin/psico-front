@@ -1,1 +1,12 @@
-<p>Menu test only text</p>
+<button mat-button [matMenuTriggerFor]="menu">INICIO</button>
+    <mat-menu #menu="matMenu">
+        <p><button mat-button>INICIO</button></p>
+        <hr>
+        <p><button mat-button>ARTÍCULOS</button></p>
+        <hr>
+        <p><button mat-button>SERVICIOS</button></p>
+        <hr>
+        <p><button mat-button>CONTACTOS</button></p>
+        <hr>
+        <p><button mat-button>ENLACES DE INTERÉS</button></p>
+    </mat-menu>
