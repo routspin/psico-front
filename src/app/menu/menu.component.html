@@ -1,13 +1,20 @@
-<mat-toolbar class="tbar">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
+<mat-toolbar class="tbar" [class.mat-elevation-z6]="true">
+    <button mat-icon-button class="tbar-icon" [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
     </button>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
+    <mat-menu #menu="matMenu" class="mainMenu">
+        <button mat-menu-item>INICIO</button>
+        <button mat-menu-item>ARTÍCULOS</button>
+        <button mat-menu-item>SERVICIOS</button>
+        <button mat-menu-item>CONTACTOS</button>
+        <button mat-menu-item>ENLACES DE INTERÉS</button>
+    </mat-menu>
+    <span class="title">Psicología Sexología</span>
+    <span class="spacer"></span>
+    <button mat-icon-button class="tbar-icon favorite-icon">
+        <mat-icon>favorite</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
+    <button mat-icon-button class="tbar-icon">
+        <mat-icon>share</mat-icon>
     </button>
-  </mat-toolbar>
+</mat-toolbar>

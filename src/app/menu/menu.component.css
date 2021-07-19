@@ -4,10 +4,23 @@
     z-index: 1;
   }
 
-  .example-spacer {
+  .title {
+    padding: 5px;
+  }
+
+  .spacer {
     flex: 1 1 auto;
   }
 
-  .tbar{
-    background-color: blueviolet;
+  .tbar-icon{
+    color: rgb(193, 168, 216);
   }
+
+  .tbar{
+    background-color: rgb(193, 168, 216);
+  }
+
+  ::ng-deep .mainMenu{
+    background: rgb(193, 168, 216);
+  }
+
