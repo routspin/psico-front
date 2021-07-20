@@ -1,0 +1,14 @@
+.footbar {
+    background-color: rgb(193, 168, 216);
+    height: 40px;
+}
+
+.footerText {
+    padding: 5px;
+    font-size: 12px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+

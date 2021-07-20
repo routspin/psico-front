@@ -27,18 +27,20 @@
   .tbar-icon {
     /*color: rgb(193, 168, 216);*/
     color: rgb(18, 5, 31);
-    background-color: rgb(193, 168, 216);
+    background-color: rgb(197, 181, 210);
     border-style: hidden;
     margin: 1%;
     cursor: pointer;
   }
 
   .hover-class:hover{
-    background-color: rgb(159, 133, 184);
+    background-color: rgb(191, 164, 212);
+    border-style: solid;
+    border-radius: 10px
   }
 
   .tbar {
-    background-color: rgb(193, 168, 216);
+    background-color: rgb(197, 181, 210);
   }
 
   ::ng-deep .mainMenu {
