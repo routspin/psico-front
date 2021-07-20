@@ -1,20 +1,32 @@
-<mat-toolbar class="tbar" [class.mat-elevation-z6]="true">
-    <button mat-icon-button class="tbar-icon" [matMenuTriggerFor]="menu">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu" class="mainMenu">
-        <button mat-menu-item>INICIO</button>
-        <button mat-menu-item>ARTÍCULOS</button>
-        <button mat-menu-item>SERVICIOS</button>
-        <button mat-menu-item>CONTACTOS</button>
-        <button mat-menu-item>ENLACES DE INTERÉS</button>
-    </mat-menu>
-    <span class="title">Psicología Sexología</span>
-    <span class="spacer"></span>
-    <button mat-icon-button class="tbar-icon favorite-icon">
-        <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="tbar-icon">
-        <mat-icon>share</mat-icon>
-    </button>
+<mat-toolbar class="tbar">
+    <mat-toolbar-row [class.mat-elevation-z6]="true">
+        <button mat-icon-button class="tbar-icon" [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" class="mainMenu small">
+            <button mat-menu-item>INICIO</button>
+            <button mat-menu-item>ARTÍCULOS</button>
+            <button mat-menu-item>SERVICIOS</button>
+            <button mat-menu-item>CONTACTOS</button>
+            <button mat-menu-item>ENLACES DE INTERÉS</button>
+        </mat-menu>
+        <span class="title">Psicología Sexología</span>
+        <span class="spacer"></span>
+
+        <button mat-icon-button class="tbar-icon favorite-icon">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="tbar-icon">
+            <mat-icon>share</mat-icon>
+        </button>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+        <span><button mat-menu-item>INICIO</button></span>
+        <span><button mat-menu-item>ARTÍCULOS</button></span>
+        <span><button mat-menu-item>SERVICIOS</button></span>
+        <span><button mat-menu-item>CONTACTOS</button></span>
+        <span><button mat-menu-item>ENLACES DE INTERÉS</button></span>
+        <span class="spacer"></span>
+    </mat-toolbar-row>
 </mat-toolbar>
