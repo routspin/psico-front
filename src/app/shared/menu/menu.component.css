@@ -25,7 +25,16 @@
   }
 
   .tbar-icon {
-    color: rgb(193, 168, 216);
+    /*color: rgb(193, 168, 216);*/
+    color: rgb(18, 5, 31);
+    background-color: rgb(193, 168, 216);
+    border-style: hidden;
+    margin: 1%;
+    cursor: pointer;
+  }
+
+  .hover-class:hover{
+    background-color: rgb(159, 133, 184);
   }
 
   .tbar {
